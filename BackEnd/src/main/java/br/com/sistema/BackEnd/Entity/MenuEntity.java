@@ -30,5 +30,4 @@ public class MenuEntity {
     @NotNull(message = "Campo Ordem, obrigatório!")
     private Integer ordem;
 
-
 }
