@@ -1,0 +1,25 @@
+
+#Conexão Banco MySql
+#spring.datasource.url=jdbc:mysql://localhost/localizacao?userTimezone=true&serverTimezone=UTC
+#spring.datasource.url=jdbc:mysql://localhost/localizacao
+#spring.datasource.driverClassName=com.mysql.cj.jdbc.Driver
+#spring.datasource.username=root
+#spring.datasource.password=
+#spring.jpa.database-platform=org.hibernate.dialect.MySQLDialect
+#spring.jpa.properties.hibernate.show_sql = true
+#spring.jpa.properties.hibernate.format_sql = true
+
+# Arquivo com final yml
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/oficinabolo
+    username: root
+    password:
+  jpa:
+    properties:
+      hibernate:
+        ddl-auto: none
+        generate-ddl: false
+        show_sql: true
+        format_sql: true
