@@ -19,7 +19,7 @@ public class MenuController {
 
     @GetMapping("/listar")
     public List<MenuEntity> Listar( @RequestBody MenuDTO filtro){
-        System.out.println("Filtro em Controller ...: "+filtro);        return service.Listar(filtro);
+     return service.Listar(filtro);
     }
     @GetMapping("/pesquisar")
     public MenuEntity Pesquisar( @RequestBody MenuDTO filtro){

@@ -33,10 +33,12 @@ public class MenuService {
         if (StringUtils.hasText(filtro.getDescricao())){
             specs = specs.and(MenuSpec.descricaoLike(filtro.getDescricao()));
         }
+
         return repository.findAll(specs);
 
     }
     public MenuEntity Pesquisar(MenuDTO filtro){
+
         return repository.findById(filtro.getCodigo())
                 .orElseThrow(()-> new ResponseStatusException(HttpStatus.NOT_FOUND,"Registro não encontrado!"));
     }

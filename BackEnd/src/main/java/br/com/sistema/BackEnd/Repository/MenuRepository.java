@@ -5,6 +5,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 
 public interface MenuRepository extends JpaRepository<MenuEntity, Integer> , JpaSpecificationExecutor {
-    // Hql
+    // Hql com Specification
     boolean existsByNome(String nome);
 }
